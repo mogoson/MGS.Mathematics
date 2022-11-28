@@ -61,3 +61,5 @@ crashlytics-build.properties
 /UnityProject/obj
 /UnityProject/Library
 /UnityProject/Temp
+/UnityProject/Assets/MGS.Packages/ScriptTemplateEditor.meta
+/UnityProject/Assets/MGS.Packages/ScriptTemplateEditor
