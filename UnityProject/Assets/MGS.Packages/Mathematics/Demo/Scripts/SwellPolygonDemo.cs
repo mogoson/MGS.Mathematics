@@ -30,6 +30,7 @@ namespace MGS.Mathematics.Demo
             }
 
             var line = GetComponent<LineRenderer>();
+            SetVertexCount(line, transform.childCount + 1);
             var tvs2 = PolygonUtility.Swell(bvs2, -0.2f);
             var index = 0;
             foreach (var tv in tvs2)
@@ -40,6 +41,15 @@ namespace MGS.Mathematics.Demo
             }
             var startPos = new Vector3(tvs2[0].x, bvs[0].y, tvs2[0].y);
             line.SetPosition(index, startPos);
+        }
+
+        void SetVertexCount(LineRenderer lineRenderer, int count)
+        {
+#if UNITY_5_6_OR_NEWER
+            lineRenderer.positionCount = count;
+#else
+            lineRenderer.SetVertexCount(count);
+#endif
         }
     }
 }

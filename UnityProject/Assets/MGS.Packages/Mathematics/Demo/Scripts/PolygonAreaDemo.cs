@@ -30,7 +30,7 @@ namespace MGS.Mathematics.Demo
             var line = GetComponent<LineRenderer>();
             line.useWorldSpace = false;
 
-            line.SetVertexCount(transform.childCount + 1);
+            SetVertexCount(line, transform.childCount + 1);
             line.SetPosition(transform.childCount, transform.GetChild(0).localPosition);
 
             var index = 0;
@@ -52,6 +52,15 @@ namespace MGS.Mathematics.Demo
                 isInside = isIn;
                 tangMonk.material = isInside ? greenMat : redMat;
             }
+        }
+
+        void SetVertexCount(LineRenderer lineRenderer, int count)
+        {
+#if UNITY_5_6_OR_NEWER
+            lineRenderer.positionCount = count;
+#else
+            lineRenderer.SetVertexCount(count);
+#endif
         }
     }
 }
