@@ -1,0 +1,7 @@
+{
+    "description": "Mathematics code for C# and Unity project develop.",
+    "displayName": "Mathematics",
+    "name": "com.mgs.mathematics",
+    "unity": "2021.3",
+    "version": "1.0.0"
+}

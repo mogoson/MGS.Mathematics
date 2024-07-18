@@ -63,3 +63,9 @@ crashlytics-build.properties
 /UnityProject/Temp
 /UnityProject/Assets/MGS.Packages/ScriptTemplateEditor.meta
 /UnityProject/Assets/MGS.Packages/ScriptTemplateEditor
+/UserSettings
+/Library
+/Logs
+/obj
+/Temp
+/*.vsconfig
