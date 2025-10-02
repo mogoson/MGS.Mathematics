@@ -1,7 +1,25 @@
 {
-    "description": "Mathematics code for C# and Unity project develop.",
-    "displayName": "Mathematics",
     "name": "com.mgs.mathematics",
+    "version": "1.0.0",
+    "displayName": "Mathematics",
+    "description": "Mathematics code for C# and Unity project develop.",
     "unity": "2021.3",
-    "version": "1.0.0"
+    "keywords": [
+        "Intersection",
+        "polynomial",
+        "curve",
+        "smooth"
+    ],
+    "author": {
+        "name": "Mogoson",
+        "email": "mogoson@outlook.com",
+        "url": "https://github.com/mogoson"
+    },
+    "samples": [
+        {
+            "displayName": "Sample",
+            "description": "Sample for mathematics.",
+            "path": "Samples~/Sample"
+        }
+    ]
 }

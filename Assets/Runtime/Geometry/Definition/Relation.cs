@@ -1,5 +1,5 @@
 ﻿/*************************************************************************
- *  Copyright © 2015-2019 Mogoson. All rights reserved.
+ *  Copyright © 2019 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  Relation.cs
  *  Description  :  Position relation.
@@ -18,9 +18,9 @@ namespace MGS.Mathematics
     public enum Relation
     {
         /// <summary>
-        /// Undefined relation.
+        /// None relation.
         /// </summary>
-        Undefined = 0,
+        None = 0,
 
         /// <summary>
         /// Coincidence.

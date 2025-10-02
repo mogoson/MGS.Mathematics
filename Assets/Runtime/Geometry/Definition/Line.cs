@@ -1,5 +1,5 @@
 ﻿/*************************************************************************
- *  Copyright © 2015-2019 Mogoson. All rights reserved.
+ *  Copyright © 2019 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  Line.cs
  *  Description  :  Line in plane rectangular coordinate system.
@@ -11,6 +11,7 @@
  *************************************************************************/
 
 using System;
+using UnityEngine;
 
 namespace MGS.Mathematics
 {
@@ -30,12 +31,12 @@ namespace MGS.Mathematics
         /// <summary>
         /// Slope of line.
         /// </summary>
-        public double k;
+        public float k;
 
         /// <summary>
         /// Intercept of line.
         /// </summary>
-        public double b;
+        public float b;
 
         /// <summary>
         /// Horizontal line (x axis).
@@ -50,7 +51,7 @@ namespace MGS.Mathematics
         /// </summary>
         public static Line Vertical
         {
-            get { return new Line(double.PositiveInfinity, 0); }
+            get { return new Line(float.PositiveInfinity, 0); }
         }
         #endregion
 
@@ -60,7 +61,7 @@ namespace MGS.Mathematics
         /// </summary>
         /// <param name="k">Slope of line.</param>
         /// <param name="b">Intercept of line.</param>
-        public Line(double k, double b)
+        public Line(float k, float b)
         {
             this.k = k;
             this.b = b;
@@ -74,7 +75,7 @@ namespace MGS.Mathematics
         /// <param name="v1">Vector p1.</param>
         /// <param name="v2">Vector p2.</param>
         /// <returns>The line that pass vector v1 and v2.</returns>
-        public static Line FromPoints(Vector2D v1, Vector2D v2)
+        public static Line FromPoints(Vector2 v1, Vector2 v2)
         {
             /*
              *  Ay = kAx + b, By = kBx + b
@@ -86,12 +87,12 @@ namespace MGS.Mathematics
 
             var dx = v2.x - v1.x;
             var dy = v2.y - v1.y;
-            var k = 0d;
-            var b = 0d;
+            var k = 0f;
+            var b = 0f;
 
             if (dx == 0)
             {
-                k = double.PositiveInfinity;
+                k = float.PositiveInfinity;
                 b = v1.x;
             }
             else

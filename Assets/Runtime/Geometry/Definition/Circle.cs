@@ -1,5 +1,5 @@
 ﻿/*************************************************************************
- *  Copyright © 2015-2019 Mogoson. All rights reserved.
+ *  Copyright © 2019 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  Circle.cs
  *  Description  :  Circle in plane rectangular coordinate system.
@@ -11,6 +11,7 @@
  *************************************************************************/
 
 using System;
+using UnityEngine;
 
 namespace MGS.Mathematics
 {
@@ -29,19 +30,19 @@ namespace MGS.Mathematics
         /// <summary>
         /// Center.
         /// </summary>
-        public Vector2D c;
+        public Vector2 c;
 
         /// <summary>
         /// Radius.
         /// </summary>
-        public double r;
+        public float r;
 
         /// <summary>
         /// Unit circle.
         /// </summary>
         public static Circle Unit
         {
-            get { return new Circle(Vector2D.Zero, 1); }
+            get { return new Circle(Vector2.zero, 1); }
         }
         #endregion
 
@@ -51,7 +52,7 @@ namespace MGS.Mathematics
         /// </summary>
         /// <param name="c">Center.</param>
         /// <param name="r">Radius.</param>
-        public Circle(Vector2D c, double r)
+        public Circle(Vector2 c, float r)
         {
             this.c = c;
             this.r = r;

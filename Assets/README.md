@@ -6,32 +6,29 @@
 
 - Mathematics code for C# and Unity project develop.
 
-## Environment
+## Ability
 
-- Unity 5.0 or above.
-- .Net Framework 3.5 or above.
-
-## Platform
-
-- Windows
-
-## Module
-### Geometry
-
-- Vector2D, Line, Circle.
+- Line, Circle.
 - Relation, Intersection.
-
-### Hermite Curve
-
 - Hermite polynomial.
 - Hermite Curve.
-
-### Math Smooth
-
 - Linear Smooth.
 - Quadratic Smooth.
 - Cubic Smooth.
 
-------
+## Install
 
-Copyright © 2022 Mogoson.	mogoson@outlook.com
+- Unity --> Window --> Package Manager --> "+" --> Add package from git URL...
+
+  ```text
+  https://github.com/mogoson/MGS.Mathematics.git?path=/Assets
+  ```
+
+
+## Samples
+
+- Unity --> Window --> Package Manager --> Packages-Mogoson --> Mathematics --> Samples.
+
+---
+
+Copyright © 2025 Mogoson.	mogoson@outlook.com
